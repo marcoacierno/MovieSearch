@@ -19,7 +19,7 @@
                 <br />
             	<ul data-role="listview" data-filter="true" data-filter-placeholder="Cerca regione" data-inset="true">
                     <li><a href="regioni/regione.php?s=Piemonte" data-prefetch="true">Piemonte</a></li>
-                    <li><a href="regioni/regione.php?s=Valle Aosta" data-prefetch="true">Valle d'Aosta</a></li>
+                    <li><a href="regioni/regione.php?s=Valle Aosta" data-prefetch="true">Valle d&#39;Aosta</a></li>
                     <li><a href="regioni/regione.php?s=Liguria" data-prefetch="true">Liguria</a></li>
                     <li><a href="regioni/regione.php?s=Lombardia" data-prefetch="true">Lombardia</a></li>
                     <li><a href="regioni/regione.php?s=Trentino" data-prefetch="true">Trentino-Alto Adige</a></li>
