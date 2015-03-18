@@ -95,7 +95,7 @@ class GMovies
 						
 						$results[$idx]["movies"][$movies_idx]["info"] = preg_replace('/[^a-zA-Z0-9_ %\[\]\.\(\)%&-]/s', '', $movie->getElementsByTagName("span")->item(0)->nodeValue);
 						
-						$results[$idx]["movies"][$movies_idx]["orari"] = array ( );
+						$results[$idx]["movies"][$movies_idx]["hours"] = array ( );
 						
 						foreach 
 							(
@@ -107,7 +107,7 @@ class GMovies
 							$orario = preg_replace('/[^a-zA-Z0-9_ %\[\]\.\(\)%&-:]/s', '', trim($hours->nodeValue));
 							if (strlen($orario) > 5)// la stringa è parecchio infetta - bisogna pulirla meglio
 							{
-								$results[$idx]["movies"][$movies_idx]["orari"][] = $orario;
+								$results[$idx]["movies"][$movies_idx]["hours"][] = $orario;
 							}
 						}
 						
