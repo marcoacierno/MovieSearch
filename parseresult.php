@@ -4,7 +4,7 @@
  * Analizza il DOM della pagina e restituisce i risultati
  * Il formato del dom che viene analizzato è stato preso il 5/07/2013
  */
-//error_reporting(-1);// ma dove si mette il @ nelle funzioni della programmazione orientata ad oggetti? ahah ok l'ho capito AHAH
+//error_reporting(-1);
 class GMovies
 {
 	/*
@@ -50,10 +50,6 @@ class GMovies
 				// div punta a <div class="theater"> il primo div è quello che mi interessa
 				// in questo momento
 				
-				//ATTENZIONE
-				// PER IL MOMENTO USO QUESTO SISTEMA
-				// MA IN FUTURO SARà USATA QUESTA LIBRERIA
-				// https://github.com/ircmaxell/ErrorExceptions
 				$results[$idx]["name"] = @$div->getElementsByTagName("div")->item(0)->getElementsByTagName("h2")->item(0)->getElementsByTagName("a")->item(0)->nodeValue;
 				
 				if (is_null($results[$idx]["name"]))
@@ -105,7 +101,6 @@ class GMovies
 							(
 								$movie->getElementsByTagName("div")->item(1)->getElementsByTagName("span") 
 								as
-								
 								$hours
 							)
 						{
@@ -127,6 +122,4 @@ class GMovies
 		return $results;
 	}
 }
-// rrevo :)
-// github: github.com/rrev 
 ?>
