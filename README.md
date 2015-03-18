@@ -26,7 +26,7 @@ GMovies - Array
 >                         (<br />
 >                             [name] = Movie Name<br />
 >                             [info] = Movie info<br />
->                             [orari] = Array - Contains all hours of the film<br />
+>                             [hours] = Array - Contains all hours of the film<br />
 >                                 (<br />
 >                                     [0] =  A<br />
 >                                     [1] =  B<br />
